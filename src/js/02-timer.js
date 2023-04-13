@@ -71,13 +71,13 @@ function onStartBtn() {
   }, 1000);
 }
 
-function pad(time) {
-  return String(time).padStart(2, '0');
+function addLeadingZero(value) {
+  return String(value).padStart(2, '0');
 }
 
 function updateClockField(time) {
-  refs.daysField.textContent = pad(time.days);
-  refs.hoursField.textContent = pad(time.hours);
-  refs.minutesField.textContent = pad(time.minutes);
-  refs.secondsField.textContent = pad(time.seconds);
+  refs.daysField.textContent = addLeadingZero(time.days);
+  refs.hoursField.textContent = addLeadingZero(time.hours);
+  refs.minutesField.textContent = addLeadingZero(time.minutes);
+  refs.secondsField.textContent = addLeadingZero(time.seconds);
 }
