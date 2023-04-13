@@ -16,3 +16,43 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker {
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+[data-start] {
+  background-color: red;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.timer {
+  display: flex;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(43, 0, 128);
+}
+
+.label {
+  font-size: 1rem;
+}
